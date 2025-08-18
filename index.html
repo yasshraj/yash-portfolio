@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Yashraj Purbey</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Yashraj Purbey</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./media/profile_pic.png" alt="Yashraj Purbey profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Yashraj Purbey</h1>
+        <p class="section__text__p2">Web Developer | Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./media/yash_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./media/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/yashraj-purbey-49a626254/'"
+          />
+          <img
+            src="./media/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/yasshraj'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Lets Explore more</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container sec-about">
+          <img
+            src="./media/yash_pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container sec-about">
+              <img
+                src="./media/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Web & Software Development</p>
+            </div>
+            <div class="details-container sec-about">
+              <img
+                src="./media/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br /> University of Nebraska - Lincoln</p>
+            </div>
+          </div>
+          <div class="text-container sec-about-text">
+            <p>
+              I'm a computer science student at the University of Nebraska-Lincoln, where with a 3.86 GPA, I'm among the top 15% of best achieving students and I'm excited to use my knowledge and skills in the tech world.
+              As an international student, I love learning about different cultures and believe this helps me see things in new ways.
+              Through my internships, I have gained real-world experience, such as building software tools at Olsson and helping solve
+              computer issues for the State of Nebraska. I am eager to find a role where I can help a team create innovative things and continue
+              to grow as a tech professional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Some of my</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technology</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>TypeScript</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Vue.Js</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>PHP</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Phython</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>R</h3>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Jobs & Projects</h2>
+            <div class="article-container">
+                <div>
+                  <h3>Software Developer Intern (Olsson)</h3>
+                  <p>Developed a full-stack funding automation tool using Vue.js and PostgreSQL, deployed with Docker and Azure to match projects with funding opportunities.</p>
+                </div>
+                <div>
+                  <h3>IT Intern (State of Nebraska)</h3>
+                  <p>Provided first-level technical support by diagnosing and resolving a wide range of network, hardware, and software issues for state clients.</p>
+                </div>
+                <div>
+                  <h3>Research Assistant (Civil & Environmental Engineering)</h3>
+                  <p>Utilized machine learning and Python to process satellite imagery and develop a model to predict ice jams in Nebraska rivers.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-text">
+            <p class="contact-description"> Lets get to know each other. Feel free to reach out to me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <div class="contact-form">
+                <form action="" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2025 Yashraj Purbey. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <div id="dialog-box">
+        <div class="dialog-content">
+            <p>Message Sent Successfully!</p>
+        </div>
+    </div>
+  </body>
+</html>
