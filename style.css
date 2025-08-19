@@ -319,6 +319,19 @@ section {
   background: linear-gradient(90deg, rgb(246, 200, 151) 0%, rgb(157, 209, 214) 100%);
 }
 
+.text-container {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-container p {
+  line-height: 1.6;
+}
+
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
