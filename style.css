@@ -248,6 +248,7 @@ section {
   text-align: center;
 }
 
+
 #socials-container {
   display: flex;
   justify-content: center;
@@ -316,7 +317,6 @@ section {
   margin: 0;
   padding: 10vh 10rem;
   background: linear-gradient(90deg, rgb(246, 200, 151) 0%, rgb(157, 209, 214) 100%);
-  color: white; 
 }
 
 .about-containers {
