@@ -183,6 +183,7 @@ section {
 #profile {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
   height: 80vh;
 }
@@ -202,7 +203,21 @@ section {
     object-fit: cover;
 }
 
+.intro-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align children to the left */
+  gap: 1rem;
+}
+
 .section__text {
+  display: flex;
   align-self: center;
   text-align: center;
   /* transform: translate(2rem, -5rem); */
@@ -213,13 +228,14 @@ section {
 }
 
 .section__text__p1 {
-  text-align: center;
+  text-align: left;
   font-size: 1.5rem;
 }
 
 .section__text__p2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  text-align: left ;
 
   color: transparent;
   background-image: linear-gradient(
@@ -245,7 +261,7 @@ section {
 
 .title {
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
 }
 
 
